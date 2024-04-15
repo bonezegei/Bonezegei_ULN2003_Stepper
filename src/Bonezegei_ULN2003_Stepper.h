@@ -30,7 +30,7 @@ public:
   void step(int dir, int steps);
 
   // step by angle for initial points
-  void stepAngle(int dir, int steps);
+  void stepAngle(int dir, int angle);
 
   //Variables
   uint8_t _in1;          // Input 1

@@ -29,6 +29,9 @@ public:
   //Param2 Number of Steps
   void step(int dir, int steps);
 
+  // step by angle for initial points
+  void stepAngle(int dir, int steps);
+
   //Variables
   uint8_t _in1;          // Input 1
   uint8_t _in2;          // Input 2

@@ -30,6 +30,11 @@ void loop() {
   // Param 1 Direction (Forware or Reverse)
   // Param2 Number of Steps
   Stepper.step(FORWARD, 2000);
+
+  // stepAngle(Param1, Param2)
+  // Param 1 Direction (Forware or Reverse)
+  // Param2 Angle from initial point
+  // Stepper.stepAngle(FORWARD, 90);
   
   delay(2000);
   Stepper.step(REVERSE, 2000);

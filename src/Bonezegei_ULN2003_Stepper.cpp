@@ -115,3 +115,12 @@ void Bonezegei_ULN2003_Stepper::step(int dir, int steps) {
   digitalWrite(_in3, LOW);
   digitalWrite(_in4, LOW);
 }
+
+void Bonezegei_ULN2003_Stepper::stepAngle(int dir, int angle){
+  int stp=0;
+  if(_mode == MODE_FULL_STEP){
+    stp= (angle/5.625);
+    step(dir, stp);
+  }
+  
+}
